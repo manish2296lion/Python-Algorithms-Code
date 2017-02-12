@@ -1,0 +1,10 @@
+1.Heap is complete binary tree.
+2.Hashing to deal with collision rather than using linked list use binary search trees.
+3.Left child in heap is 2i+1
+4.Right child is 2i+2
+5.Parent is floor(i-1)
+6.element with indices greater than floor(n/2)-1 where n is the number of elements in the heap are leaf nodes
+7.Height of heap is of the order O(logn)
+8.Single Max-heapify can take O(height of node) time.Number of nodes at a particular height is ceiling(n/pow(2,h)).So Time complexity is Summation h goes from 0 to logn celing(n/pow(2,h))*O(h)
+=O(n) see saurabh school https://www.youtube.com/watch?v=YJa3GpNUrNs&t=33s.
+

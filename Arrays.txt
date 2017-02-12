@@ -1,0 +1,12 @@
+1.Kadane algorithm.(Linear)
+Largest Sum contigious subarray..
+http://www.geeksforgeeks.org/largest-sum-contiguous-subarray/
+currentSum=max(al.get(i),currentSum+al.get(i));
+
+2.Minimum length subarray?
+linear?
+
+3.Minimize the sum of product of 2 arrays.
+sort both array and multiply max of one with min of other.
+
+4.Whenever possible use hashing.

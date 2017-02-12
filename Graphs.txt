@@ -1,0 +1,82 @@
+Permutation of 2*2*2 rubiks cube=(8!*3^8)/(24*3);(Only 3rd of configuraion is reachable).
+
+Order of size complexity of adjacency list is V+2E words 2E because of handshaking lemma time complexity to search is O(deg(V)).
+
+Handshaking Lemma-Sum of deg of all the vertices=2*Number of Edges
+
+Optimum substructure-Important.
+
+Order of size complexity of adjcency matrix is V^2 bits time complexity to search O(V)
+
+For bfs use Queue and hash table(To check if node is visited)(Dictionary).
+
+(Look at R13 MIT6006)
+For bfs running time-
+-Adjacency list-O(V + E)(Provided u r looking at all the vertices incase of unconnected graphs)(Depends if u are using pyhton dict or arrays)
+
+-Adjacency matrix-O(V^2).
+
+Dijkstra-
+
+Facebook - undirected "friends"
+	-directed "follow"
+Twitter - directed "follow"
+
+For DFS we use stack or recursion(its the same thing) iterate over neighbours and recurse.
+Keep trraackof nodes you have visited using dictionary.
+
+Undirected graphs dont have forward edges and crross edges
+
+DFS is useful for topological sorting.
+If a graph has backward edge then it has cycle.
+If u have cycle u cant do topological sort.
+for topological sort acyclic,and directed.
+
+First print out the order in which you finished(not visited)(add it to dict list after you are finished with each vertex) then reverse the order all nodes that depend on current element have been added to list so no dependency result have been violated sort of like bracket matching.
+
+Single source all/any destination shortest path
+
+DAG-
+Directed Acyclic Graphs
+
+Relaxation is safe
+Fibonacci heap
+
+Shortest path with weights
+1.Topological sort + Relaxation(No cycles can be negative edges)
+
+2.Using bfs add fake nodes such that each edge has same weight.
+
+3.Dijsktra-(Only +ve weights.Can be cyclic)
+use min heap O(VLOGV+ElogV) or fibonacci heap O(VLOGV+E).
+use array to store element O(V^2+E)(Faster to update this way)(Useful if E>>>V^2) but fibonacci is best.
+4.Bellman Ford(Can be negative and cyclic)-
+Order-O(VE)~O(V^3)
+Relax all edges in every |V|-1 pass.
+if after |V|-1 passes u find an edge can be relaxed this means  there is a negative cycle.
+
+Longest Path?
+negate weights?
+
+Single source single destination shortest path.
+
+1.Stop when you complete your required vertex
+2.using alternate forward and backward traversal
+
+Use heuristic to modify weight for faster computation.
+
+Bidirectional source and destination algorithms.
+
+
+For keeping track of the states(3d graph) we can double the nodes(Useful for finding shortest path such that total edges are odd MIT6006 R15).
+
+
+
+Do travelling salesman algo.
+
+difference between path and tree.
+
+Minimum Spanning Trees.
+
+using dfs we get spanning trees.
+
