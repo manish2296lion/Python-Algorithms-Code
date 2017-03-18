@@ -1,0 +1,11 @@
+1.Blurring is smoothing
+2.If nearby pixels are similar and noise is independent then a centered weighted moving average is the right thing to do.
+3.Isotropic means circularly symmetric.
+4.Separability in some kernels or filters (linearly separable filters like gaussian) can greatly increase Computation Complexity.
+5.Few ways to deal with filtering reducing image size.
+			a.clip filter
+			b.wrap around
+			c.copy edge
+			d.reflect across egde.(best)
+6.median filtering is edge preserving(useful to remove salt and pepper noise).
+7.gradient points in the direction of most rapid change in intensity.and mag of that vector is how much it is changing.

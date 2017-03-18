@@ -1,0 +1,26 @@
+Regularization:-
+Underfitting:-High Bias.
+Overfitting:-High Variance.
+To prevent overfitting:-
+	1.Reduce number of features.
+		a.Model Selection Algorithms--------------------
+		b.Manual Removal
+	2.Regularization
+		Reducing the value of less useful params.
+Cost Function in Regularization:-
+	Smaller Value of params means simpler hypothesis,less prone to overfitting
+	Use regularization parameter lamba carefully.
+	multiselection help to choose lambda automatically.-----------
+
+Regularized Cost Function for LRegression:-
+d(J(theta))/d(theta) just add lamba*theta/m
+
+Support Vector Machines
+1.Line of Least Commitment.
+2.w(transpose)*x+b=1,-1,0(hyperplanes)
+3.distance between 2 lines(b1-b1)/w
+4.perpendicular to a plane is w vector.
+5.We want to maximize 2/(length(w))
+
+
+				
